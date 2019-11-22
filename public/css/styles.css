@@ -1,0 +1,159 @@
+
+body {
+  background-color: #9fdfcd;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+    padding-bottom: 100px;
+  background-image: url('/images/up5.jpg');
+  background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+font-family: 'Calistoga', cursive;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+  .display-3{
+    font-family: 'Calistoga', cursive;
+    color: #000000;
+  }
+  .lead{
+    font-family: 'Anton', sans-serif;
+        color: #000000;
+  }
+#heading{
+  padding-right: 7%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+
+}
+.navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Rubik;
+  padding-left: 7%;
+  letter-spacing: 3px;
+}
+.navbar {
+    padding-top: 15px;
+    font-family: Rubik;
+    padding-bottom: 15px;
+    padding-right: 7%;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+.navbar-nav  li a:hover {
+    color: #c2e8ce !important;
+
+}
+
+.nav-item {
+  padding: 0 18px;
+
+
+}
+
+.nav-link {
+  font-size: 1rem;
+}
+
+
+
+#qualification{
+  background-color: #248ea9;
+  text-align: center;
+  color:#f4f9f4;
+  padding-top:4%;
+  padding-bottom: 0;
+  font-family: Ubuntu;
+
+}
+
+.carousel-item{
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.carousel-img{
+  border-radius: 10%;
+  width: 40%;
+  height: 50%;
+margin-bottom: 1%;
+margin-top: 0.2%;
+}
+.carousel-imgs{
+  border-radius: 10%;
+  width: 25%;
+  height: 5%;
+margin-bottom: 2%;
+margin-top: 0.2%;
+}
+.employ{
+  width: 70%;
+  height: 80%;
+margin-bottom: 1%;
+margin-top: 6%;
+padding-left: 15%;
+}
+.companies{
+  height: 25px;
+margin-bottom: 1%;
+margin-top: 0.2%;
+padding-left: 10%;
+}
+.de{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#end{
+  background-color: #0c093c;
+  text-align: center;
+  color:#fffdf9;
+  padding-top:1%;
+  padding-bottom: 1%;
+  font-family: Ubuntu;
+  font-size: 1rem;
+  line-height: 2.2rem;
+  margin-top: 5%;
+}
+
+.download-button-con{
+  margin: 5% 3% 5% 0;
+}
+
+.bottom{
+  padding-top:5px;
+}
+.social-icon{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 1%
+  color:#fffdf9;
+}
+.social-icon:hover{
+  color:#fffdf9;
+}
+
+.text-center{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
