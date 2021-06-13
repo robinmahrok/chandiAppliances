@@ -23,22 +23,19 @@ body {
 
 .caro1{
   background-image: url('/images/acheater2.jpg');
-  background-repeat: no-repeat;
-   background-size: 50%;
+  background-repeat:no-repeat;
+   background-size: contain;
 font-size: 3rem;
-
 font-family: 'Anton', sans-serif;
 
 }
+
 .caro2{
   background-image: url('/images/appliancesservices.jpg');
   background-repeat: no-repeat;
-   background-size: 50%;
+   background-size: contain;
 font-size: 3rem;
-
 font-family: 'Anton', sans-serif;
-
-
 }
 /* .caro3{
   background-image: url('/images/maseccover.jpg');
