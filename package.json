@@ -1,7 +1,7 @@
 {
-  "name": "pac-security",
+  "name": "chandi-appliances",
   "version": "1.0.0",
-  "description": "Web Site Designed for Pac-Security by SRR Pvt Ltd.",
+  "description": "Web Site Designed for Chandi Appliances",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
