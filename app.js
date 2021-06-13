@@ -4,6 +4,7 @@ const express=require("express");
 const bodyParser=require("body-parser");
 const ejs=require("ejs");
 const _ = require('lodash');
+var {mailer,mailer2} = require('./mailer');
 
 
 const app=express();
@@ -51,8 +52,37 @@ app.get("/feedback", function(req,res){
 });
 
 app.post("/addFeedback", function(req,res){
- 
+ var name=req.body.name;
+ var email=req.body.email;
+ var contact=req.body.contact;
+ var feedback=req.body.feedback;
 
+console.log(contact)
+
+mailer2({
+  email: email,
+ name:name,
+ contact:contact,
+ feedback:feedback
+}, result => {
+  if (result && result.status == 1000) {
+      console.log("Feedback Sent to me!");
+      mailer({
+        email: email,
+       name:name
+      }, result => {
+        if (result && result.status == 1000) {
+            console.log("Feedback Sent to Customer!");
+            res.redirect('/');
+         
+        } else {
+          console.log("Unable to send OTP through email")
+        }
+      });  
+  } else {
+   console.log("Unable to send OTP through email")
+  }
+});  
   
 });
 
