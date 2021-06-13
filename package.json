@@ -4,7 +4,6 @@
   "description": "Web Site Designed for Pac-Security by SRR Pvt Ltd.",
   "main": "app.js",
   "dependencies": {
-    "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "bootstrap-icons": "^1.0.0-alpha2",
