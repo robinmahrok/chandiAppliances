@@ -1,20 +1,15 @@
 {
-  "name": "secrets",
+  "name": "pac-security",
   "version": "1.0.0",
+  "description": "Web Site Designed for Pac-Security by SRR Pvt Ltd.",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "engines": {
-    "node": "10.16.1"
-  },
   "dependencies": {
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "bootstrap-icons": "^1.0.0-alpha2",
     "dotenv": "^8.2.0",
-    "ejs": "^2.7.2",
+    "ejs": "^2.7.4",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "lodash": "^4.17.15",
@@ -26,5 +21,10 @@
     "request": "^2.88.0"
   },
   "devDependencies": {},
-  "description": ""
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SRR Pvt Ltd.",
+  "license": "ISC"
 }

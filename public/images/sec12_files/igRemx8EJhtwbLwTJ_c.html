@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<!-- saved from url=(0121)https://app.intelliticks.com/widgets/engage/igRemx8EJhtwbLwTJ_c?ref=&landing=https%3A%2F%2Fwww.valencynetworks.com%2F&v=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    			<!--<base href="/">--><base href=".">
+    			<link rel="shortcut icon" type="image/png" href="https://app.intelliticks.com/favicon-32x32.png" sizes="32x32">
+    			<link rel="shortcut icon" type="image/png" href="https://app.intelliticks.com/favicon-16x16.png" sizes="16x16">
+    			<meta name="viewport" content="width=device-width, initial-scale=1">
+    			
+			<link rel="stylesheet" href="./css">
+			<link rel="stylesheet" type="text/css" href="./all.css">
+			<link rel="stylesheet" type="text/css" href="./client.css">
+			<style>
+			html,body {font-family: 'Open Sans', sans-serif;font-size:13px;}
+			.active.iticks-chat-send-button .iticks-send-icon, .attach-btn svg  {
+				fill:#77B3D4;
+				cursor:pointer;
+			}
+			.active.slider-send-button {
+				background: #77B3D4;
+			}
+			.iticks-send-submit-text.show, .active.slider-send-button {
+				color: #77B3D4;
+				border: 1px solid #77B3D4;
+				background: #fff;
+			}
+			.iticks-send-submit-text.show svg, .active.slider-send-button .slider-send-icon{
+				fill: #77B3D4;
+			}
+			.iticks-send-submit-text.show:hover, .active.slider-send-button:hover {
+				background: #77B3D4;
+				color: #fff;
+			}
+			.iticks-top-bar, .iticks-entry-top-bar{background:#77B3D4;border-top-right-radius:5px;border-top-left-radius:5px};
+			.agent-profile{border:10px solid #77B3D4;}
+			.iticks-top-bar-text, .iticks-entry-top-text{color:#fff;font-weight:500;}
+			.iticks-top-bar-button svg {fill: #fff;}
+			.left-menu-icon {background: #77B3D4;}
+			.webview-selector span {border: 1px solid #77B3D4;color: #77B3D4;}
+			.webview-selector span:hover {background: #77B3D4;}
+			.user .iticks-message-text {
+				background: #77B3D4;
+				color: #fff;
+				word-break: normal;
+			}
+			.agent .iticks-message-text {
+				background: #f4f7f9;
+				color: #263238;
+				word-break: normal;
+			}
+			.iticks-message-link span {
+				color : #77B3D4;
+				font-weight: bold;
+				margin-left : 14px;
+				text-decoration : none;
+			}
+			.qrnode {
+				border: 1px solid #77B3D4;
+				color: #77B3D4;
+			}
+			.msnode {
+				color: #77B3D4;
+			}
+			.date-picker input:focus,
+			.date-picker-Mob input:focus {
+				outline: 1px solid #77B3D4
+			}
+			.datepicker--day-name {
+				color : #77B3D4 !important;
+			}
+			.datepicker--cell.-selected- {
+				background: #77B3D4 !important; 
+			}
+			.datepicker--cell.-selected-.-current- {
+				color: #fff;
+				background: #77B3D4 !important ; 
+			} 
+			.ui-state-active, .ui-state-active:hover {
+				border: 1px solid #77B3D4 !important;
+				background: #77B3D4 !important;
+			}
+			.ui-slider-handle:focus {
+				border: 1px solid #77B3D4 !important;
+			}
+			.slider-picked-values {
+				color: #77B3D4;
+			}
+			.disable-button {
+				pointer-events: none;
+			}
+			.it-button {background: #77B3D4; color:#fff; border: 1px solid #77B3D4; font-weight:bold; font-size:1rem; height: 24px; line-height: 24px; padding: 0 5px; border-radius: 2px; float:right;}
+			
+			
+			</style>
+    		</head>
+			<body class="iticks-widget">
+				
+			<div id="iticks-container">
+				<div class="iticks-top-bar">
+					<div class="iticks-top-bar-header">
+						<div class="iticks-top-bar-text">Talk to us ...</div>
+						<div class="iticks-header-top-right" style="display:none">
+							<img alt="restart" src="./restart.png">
+							<div class="header-top-right-text">Start Over</div>
+						</div>
+						<div class="iticks-top-bar-button" style="display:flex">
+							<img alt="cancel" class="iticks-cancel" src="./cancel.png">
+						</div>
+					</div>
+					<div class="agent-profile hidden">
+						<div class="profile-avatar">
+							<img class="profile-image" alt="Agent" src="./boy.png">
+							<div class="profile-img-txt"></div>
+						</div>
+						<div class="profile-details">
+							<div class="profile-name"></div>
+							<div class="profile-desc">Here, to help you</div>
+							<div class="rating" style="display:none;">
+								<div class="thumbs-up">up</div>
+								<div class="thumbs-down">down</div>
+							</div>
+						</div>
+						<div class="comp-logo-container">
+							<img alt="logo" class="comp-logo">
+						</div>
+					</div>
+				</div>
+				<div class="iticks-conversation-container" style="display:flex; flex-direction:column;">
+					<div class="iticks-logo-bar" style="display:none">
+						<img alt="logo" class="iticks-logo-bar-img" src="https://app.intelliticks.com/">
+					</div>
+					<div class="loading" style="display: none;">
+						<img alt="loader" src="./circular-loader.gif">
+					</div>
+					<div class="offline-msg" style="display: none;">
+						<div>Your device lost it's internet connection!</div>
+					</div>
+					<div style="display:flex; flex-direction:column; padding: 0 10px; flex: 1 1;">
+						<div class="iticks-message-block-container"><div class="iticks-message-block agent init-msgs" style="">
+					<div class="iticks-operator-avatar">
+						<img class="iticks-operator-avatar-image" alt="Agent">
+						<div class="iticks-operator-avatar-txt" style="background: rgb(239, 108, 0); display: block;">V</div>
+					</div>
+					<div class="iticks-message-container">
+						<div class="iticks-message-group">
+							<div class="iticks-message">
+								<p class="iticks-message-text">Hi... Welcome to <strong>Valency Networks&nbsp;</strong>&#128591; !!<br><br>What brings you here?</p><div class="iticks-message-links"></div>
+								<div class="iticks-message-payment tmpl links-block" style="display:none"></div>
+								<div class="iticks-message-rating"></div>
+							</div>
+						</div>
+						<div class="iticks-time">Today at 11:18 PM</div>
+					</div>
+			</div></div>
+						<div style="display:flex;flex-direction:row;flex:0 0 auto;">
+							<div style="flex:1 1"></div>
+							<div class="quick-replies vertical"><div class="qrnode">Sales</div><div class="qrnode">Careers</div><div class="qrnode">Just Browsing</div></div>
+							<div style="flex:1 1"></div>
+						</div>
+						<div class="typing-container iticks-hidden">
+							<div class="iticks-operator-avatar">
+								<img class="iticks-operator-avatar-image" alt="Agent">
+								<div class="iticks-operator-avatar-txt"></div>
+							</div>
+							<div class="typing-txt">Typing</div>
+							<div class="typing" style="display:block;">
+								<div class="typing-dot"></div>
+								<div class="typing-dot"></div>
+								<div class="typing-dot"></div>
+							</div>
+						</div>
+						<div style="flex: 1 1;"></div>
+						<div class="iticks-sys-msg" style="display:none;">Conversation has been ended by Support Rep</div>
+						<div class="iticks-powered">
+							<span>Powered by <a class="iticks_link" href="https://www.intelliticks.com/?utm_source=widget&amp;utm_term=Valency%20Networks&amp;utm_medium=link&amp;utm_campaign=referral&amp;utm_content=yBF8QegwyFTZQchJ6_cu" target="_blank">IntelliTicks</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="user-rating hidden"></div>
+				<div class="iticks-slider hidden">
+					<div class="iticks-slider-text">
+						<span class="slider-title"></span>
+						<span class="slider-picked-values"></span>
+					</div>
+					<div id="slider"></div>
+					<div class="slider-values">
+						<span class="min"></span>
+						<span class="max"></span>
+					</div>
+					<div class="slider-submit">
+						<div class="slider-send-button" title="Send message" tabindex="0">
+							<div style="display:block;">
+								<svg class="slider-send-icon" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
+									<path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"></path>
+								</svg>
+							</div>
+							<span class="iticks-send-submit-text" style="display:flex">SUBMIT</span>
+						</div>
+					</div>
+				</div>
+				<div class="iticks-footer-form-container">
+					<div class="iticks-send-chat-form">
+						<div class="one-line-form">
+							<div class="left-menu-icon hidden">
+								<img alt="arrow" id="menu-arrow" class="arrow-icon" src="./up-arrow.png">
+								</div>
+								<div style="flex: 1 1;display: flex;flex-direction: column;position:relative;margin:5px 10px;max-height:200px;overflow:hidden;" class="txtBox">
+									<pre class="resizable-text"></pre>
+									<textarea style="flex-basis:20px;" data-base-height="20" class="iticks-chat-input resizeText" placeholder="Type a message..." rows="1"></textarea>
+								</div>
+								<div class="quick-drpdown txtBoxHidden"></div>
+								<div class="date-picker txtBoxHidden">
+									<input type="text" id="datepicker" class="datepicker-here" data-language="en" data-position="top left" autocomplete="off" placeholder="Click here to Select Date" readonly="true">
+								</div>
+								<div class="date-picker-Mob txtBoxHidden">
+									<label class="wrapper">
+										<input id="datepickerMob" type="date" required="required" autocomplete="off">
+										<span></span>
+									</label>
+								</div>
+								<div class="webview-selector txtBoxHidden">
+									<span id="webview-selector"></span>
+								</div>
+								<div class="upload-box hidden">
+									<div class="attach-btn">
+										<svg focusable="false" aria-hidden="true" viewBox="0 0 16 18">
+											<path d="M14.154 6.918l-.004.003.001-.004-3.287 3.286-.006-.005-3.574 3.574c-.016.017-.03.036-.048.053l-.05.047-.043.041v-.002c-1.167 1.07-2.692 1.331-3.823.2-1.13-1.13-.89-2.677.18-3.843l-.005-.004.074-.073.016-.018c.006-.005.012-.009.017-.016l6.053-6.053.761.76-6.053 6.054-.029.028v.001l-.005.004-.073.074c.011-.01.025-.018.035-.03-.688.75-.93 1.636-.21 2.356.72.72 1.583.456 2.333-.232l-.03.034.04-.042.01-.008.008-.009.033-.03.031-.034.01-.009.007-.009 5.004-5.003.005.006 1.858-1.859c1.223-1.218 1.51-2.913.291-4.132C12.462.806 10.414.74 9.195 1.958L2.248 8.905c.003 0 .006-.002.008-.004-1.625 1.667-1.542 4.43.103 6.074 1.646 1.646 4.474 1.795 6.141.17-.003.002-.004.008-.008.012l.047-.047 6.053-6.054.042-.042.743.78-.025.021.001.002-6.05 6.05-.002.002-.002.001-.046.046h-.002c-2.094 2.04-5.578 1.894-7.652-.18-2.049-2.049-2.15-5.407-.183-7.505l-.006-.005h-.002l.076-.078 6.943-6.944.003-.002.004-.005c1.641-1.64 4.367-1.574 6.008.066 1.64 1.642 1.353 4.014-.288 5.655z" fill-rule="evenodd"></path>
+										</svg>
+									</div>
+									<input type="file" id="attachment-file">
+									</div>
+									<div class="iticks-chat-send-button quick-send" title="Send message" tabindex="0">
+										<div class="iticks-send-submit-text">
+													SUBMIT 
+											<svg viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
+												<path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"></path>
+											</svg>
+										</div>
+										<div class="iticks-send-button">
+											<svg class="iticks-send-icon" viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
+												<path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"></path>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="dynamic-form hide"></div>
+							</div>
+							<div class="re-init" style="display:none;">
+								<span class="start-new">Start new</span>
+								<span class="re-open">Re-Open</span>
+							</div>
+						</div>
+					</div>
+			<div class="iticks-webview-block hidden">
+					<div class="iticks-webview">
+						<div class="iticks-webview-top-header">
+							<span class="iticks-webview-title"></span>
+							<img alt="cancel" class="iticks-webview-cancel" src="./cancel_dark.png">
+						</div>
+						<div class="iticks-webview-iframe hidden">
+							<iframe id="webviewiframe" src="./saved_resource.html" frameborder="0"></iframe>
+						</div>
+						<div class="iframe-loading hidden">
+							<img alt="loader" src="./circular-loader.gif">
+						</div>
+					</div>
+			</div>
+			<div class="iticks-menu-block">
+				<div class="iticks-menu-overlay"></div>
+				<div class="iticks-menu">
+					<div class="iticks-menu-top-header">
+						<div class="iticks-menu-arrow hidden">
+							<img alt="close" src="./close.svg">
+							</div>
+							<span class="iticks-menu-title"></span>
+						</div>
+						<div class="iticks-menu-main-content"></div>
+					</div>
+				</div>
+			<div class="iticks-entry-block">
+					<div class="iticks-entry">
+						<div class="iticks-entry-top-bar">
+							<div class="iticks-entry-top-header">
+								<div class="iticks-entry-top-text"></div>
+								<div class="iticks-top-bar-button" style="display:flex">
+									<img alt="cancel" class="iticks-cancel" src="./cancel.png">
+								</div>
+							</div>
+						</div>
+						<div class="iticks-gdpr-main-content"></div>
+						<div class="iticks-entry-form" style="display:none;">
+							<div class="entry-form-description"></div>
+							<div class="entry-fields"></div>
+						</div>
+						<div class="iticks-entry-privacy"></div>
+						<div class="iticks-entry-opt"></div>
+					</div>
+			</div>
+			<div class="entry-field tmpl" style="display:none;">
+					<div class="field-name form-field-txt"></div>
+					<div class="field-item">
+						<input class="form-field-input" type="text">
+					</div>
+					<div style="display: flex;flex-direction: row-reverse;height:13px;">
+						<div class="error-msg" style="display:none;"></div>
+					</div>
+			</div>
+			<div class="iticks-message-block user tmpl" style="display:none;">
+					<div class="iticks-message-container">
+						<div class="iticks-message-group">
+							<div class="iticks-message">
+								<p class="iticks-message-text">
+								</p><div class="iticks-message-links"></div>
+								<div class="iticks-message-payment tmpl links-block" style="display:none"></div>
+							</div>
+						</div>
+						<div class="iticks-time">10.00am</div>
+					</div>
+			</div>
+			<div class="iticks-multi-selection" style="display:none;">
+					<div style="display:flex;flex-direction:row;flex:0 0 auto;">
+						<div class="multi-quick-replies vertical hidden">
+							<label class="msnode">
+								<input type="checkbox" id="one">one
+								</label>
+							</div>
+						</div>
+						<div style="display: flex;flex-direction: row-reverse;margin-top:10px">
+							<div class="it-button submit">Submit</div>
+							<div class="it-link skip" style="display:none;">Skip</div>
+						</div>
+					</div>
+			<div class="iticks-info-q-form tmpl" style="display:none;"></div>
+			<div class="form-field oneline tmpl" style="display:none;">
+					<div class="field-name form-field-txt"></div>
+					<div class="field-item">
+						<input class="form-field-input" type="text">
+						<img alt="tick" class="tick-img" src="./tick.png">
+					</div>
+					<div class="field-btns">
+						<div class="it-button submit">Submit</div>
+						<div class="it-link skip" style="display:none;">Skip</div>
+						<div class="error-msg" style="display:none;"></div>
+					</div>
+			</div>
+			<div class="form-field multiline tmpl" style="display:none;">
+					<div class="field-name form-field-txt"></div>
+					<div class="field-item">
+						<div class="text-cont">
+							<pre class="resizable-text"></pre>
+							<textarea class="form-field-input resizeText" type="text" style="height:45px;" data-base-height="45"></textarea>
+						</div>
+						<img alt="tick" class="tick-img" src="./tick.png">
+					</div>
+					<div class="field-btns">
+						<div class="it-button submit">Submit</div>
+						<div class="it-link skip" style="display:none;">Skip</div>
+						<div class="error-msg" style="display:none;"></div>
+					</div>
+			</div>
+			<div class="iticks-message-block agent tmpl" style="display:none;">
+					<div class="iticks-operator-avatar">
+						<img class="iticks-operator-avatar-image" alt="Agent">
+						<div class="iticks-operator-avatar-txt"></div>
+					</div>
+					<div class="iticks-message-container">
+						<div class="iticks-message-group">
+							<div class="iticks-message">
+								<p class="iticks-message-text">
+								</p><div class="iticks-message-links"></div>
+								<div class="iticks-message-payment tmpl links-block" style="display:none"></div>
+								<div class="iticks-message-rating"></div>
+							</div>
+						</div>
+						<div class="iticks-time">10.00am</div>
+					</div>
+			</div>
+			<div class="iticks-message-block system tmpl" style="display:none;">
+					<div class="line"></div>
+					<div class="iticks-message-container">
+						<div class="iticks-message">
+							<p class="iticks-message-text">
+						</p></div>
+					</div>
+			</div>
+			<script type="text/javascript" src="./all-v2.js.download"></script>
+			<script>
+				var clientId = 'igRemx8EJhtwbLwTJ_c';
+				var company = {"_id":"igRemx8EJhtwbLwTJ_c","name":"Valency Networks","domains":[],"chatuser_count":117989,"livechat_settings":{"color":"#77B3D4","widgetEnabled":true,"chatVisibilityState":"ALL","notif_font_size":14,"widget_width":400,"advanced":false,"chat_widget_header":"Talk to us ...","widget_height":500,"is_online":true,"landing_logo":"https://d361nn0tbycf2u.cloudfront.net/company/igRemx8EJhtwbLwTJ_c/agent/HvRJyQEyKE5kkEbmE/1562756663486_original.jpeg"},"company_settings":{"blockEngine_enabled":true,"rating_setting":{"rating_1":45,"rating_2":90,"rating_3":150},"event_interval":6000,"disengage_wait":3600,"engage_max_wait":45,"engage_wait_time":10,"state":"Active"},"features":{"chat":true},"company_manual_chat":true,"company_url":"valencynetworks.com","report_time":0,"subscription_details":{"payment_link":"https://zohosecurepay.com/books/intellitickstech/secure?CInvoiceID=2-18dcf28180914e25ecd3eb0de291e650745ba7cf676b5670a536fa0099b8844248a968fec9fe42bc0055bdb529f04ee8bd70539b8b11abda75a8822095a6239611e80a707f5b3196"}};
+				var bot = {"_id":"jxxRpmxTKjKWjRwjS","company":"igRemx8EJhtwbLwTJ_c","photo":null,"department":"API","status":"Active","role":"Member","name":"Valency Bot"};
+				var ref = "";
+				var landing = "https://www.valencynetworks.com/";
+				var socket = null;
+				var iticks_link = 'https://www.intelliticks.com/?utm_source=widget&utm_term=Valency Networks&utm_medium=link&utm_campaign=referral';
+				var isLandingPage = false;
+				var evtToEngage = '';
+				var engageType = '';
+				var engageName = '';
+				var cdnPrefix = 'https://cdn.intelliticks.com/prod/20200125';
+				var isEmbedded = false;
+				try {
+					socket = io.connect('https://uevents.intelliticks.com');
+				}catch(e){}
+			</script>
+			<script src="./client.min.js.download"></script>
+			<script async="" src="./utils-libphonenumber.js.download"></script>
+			
+			
+		<div class="datepickers-container" id="datepickers-container"><div class="datepicker -top-left- -from-top-"><i class="datepicker--pointer"></i><nav class="datepicker--nav"><div class="datepicker--nav-action" data-action="prev"><svg><path d="M 17,12 l -5,5 l 5,5"></path></svg></div><div class="datepicker--nav-title">January, <i>2020</i></div><div class="datepicker--nav-action" data-action="next"><svg><path d="M 14,12 l 5,5 l -5,5"></path></svg></div></nav><div class="datepicker--content"><div class="datepicker--days datepicker--body active"><div class="datepicker--days-names"><div class="datepicker--day-name -weekend-">Su</div><div class="datepicker--day-name">Mo</div><div class="datepicker--day-name">Tu</div><div class="datepicker--day-name">We</div><div class="datepicker--day-name">Th</div><div class="datepicker--day-name">Fr</div><div class="datepicker--day-name -weekend-">Sa</div></div><div class="datepicker--cells datepicker--cells-days"><div class="datepicker--cell datepicker--cell-day -weekend- -other-month-" data-date="29" data-month="11" data-year="2019">29</div><div class="datepicker--cell datepicker--cell-day -other-month-" data-date="30" data-month="11" data-year="2019">30</div><div class="datepicker--cell datepicker--cell-day -other-month-" data-date="31" data-month="11" data-year="2019">31</div><div class="datepicker--cell datepicker--cell-day" data-date="1" data-month="0" data-year="2020">1</div><div class="datepicker--cell datepicker--cell-day" data-date="2" data-month="0" data-year="2020">2</div><div class="datepicker--cell datepicker--cell-day" data-date="3" data-month="0" data-year="2020">3</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="4" data-month="0" data-year="2020">4</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="5" data-month="0" data-year="2020">5</div><div class="datepicker--cell datepicker--cell-day" data-date="6" data-month="0" data-year="2020">6</div><div class="datepicker--cell datepicker--cell-day" data-date="7" data-month="0" data-year="2020">7</div><div class="datepicker--cell datepicker--cell-day" data-date="8" data-month="0" data-year="2020">8</div><div class="datepicker--cell datepicker--cell-day" data-date="9" data-month="0" data-year="2020">9</div><div class="datepicker--cell datepicker--cell-day" data-date="10" data-month="0" data-year="2020">10</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="11" data-month="0" data-year="2020">11</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="12" data-month="0" data-year="2020">12</div><div class="datepicker--cell datepicker--cell-day" data-date="13" data-month="0" data-year="2020">13</div><div class="datepicker--cell datepicker--cell-day" data-date="14" data-month="0" data-year="2020">14</div><div class="datepicker--cell datepicker--cell-day" data-date="15" data-month="0" data-year="2020">15</div><div class="datepicker--cell datepicker--cell-day" data-date="16" data-month="0" data-year="2020">16</div><div class="datepicker--cell datepicker--cell-day" data-date="17" data-month="0" data-year="2020">17</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="18" data-month="0" data-year="2020">18</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="19" data-month="0" data-year="2020">19</div><div class="datepicker--cell datepicker--cell-day" data-date="20" data-month="0" data-year="2020">20</div><div class="datepicker--cell datepicker--cell-day" data-date="21" data-month="0" data-year="2020">21</div><div class="datepicker--cell datepicker--cell-day" data-date="22" data-month="0" data-year="2020">22</div><div class="datepicker--cell datepicker--cell-day" data-date="23" data-month="0" data-year="2020">23</div><div class="datepicker--cell datepicker--cell-day" data-date="24" data-month="0" data-year="2020">24</div><div class="datepicker--cell datepicker--cell-day -weekend-" data-date="25" data-month="0" data-year="2020">25</div><div class="datepicker--cell datepicker--cell-day -weekend- -current-" data-date="26" data-month="0" data-year="2020">26</div><div class="datepicker--cell datepicker--cell-day" data-date="27" data-month="0" data-year="2020">27</div><div class="datepicker--cell datepicker--cell-day" data-date="28" data-month="0" data-year="2020">28</div><div class="datepicker--cell datepicker--cell-day" data-date="29" data-month="0" data-year="2020">29</div><div class="datepicker--cell datepicker--cell-day" data-date="30" data-month="0" data-year="2020">30</div><div class="datepicker--cell datepicker--cell-day" data-date="31" data-month="0" data-year="2020">31</div><div class="datepicker--cell datepicker--cell-day -weekend- -other-month-" data-date="1" data-month="1" data-year="2020">1</div></div></div></div></div></div></body></html>
