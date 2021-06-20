@@ -407,7 +407,8 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #f9f6f7;
   padding-top: 25px;
   padding-bottom:50px;
-  padding-left: 30%;
+  padding-left: 20%;
+  font-size: larger;
 
 
 }
@@ -429,7 +430,6 @@ font-family: 'Yanone Kaffeesatz', sans-serif;
 .ic{
   margin-left: 15px;
   color: #f0efef;
-
 }
 
 .ic:hover{
