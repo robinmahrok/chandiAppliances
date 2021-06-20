@@ -25,6 +25,6 @@
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "SRR Pvt Ltd.",
+  "author": "Robin Singh",
   "license": "ISC"
 }
